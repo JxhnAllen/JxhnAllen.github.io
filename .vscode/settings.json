@@ -1,0 +1,33 @@
+{
+    "prettier.tabWidth": 4,
+    "prettier.singleQuote": true,
+    "prettier.useTabs": false,
+    "editor.tabSize": 4,
+    "editor.detectIndentation": false,
+    "editor.insertSpaces": true,
+    "editor.codeActionsOnSave": {"source.fixAll": true, "source.organizeImports": true},
+    "cSpell.words": [
+        "arrowdown",
+        "arrowup",
+        "cnvr",
+        "coreui",
+        "CUI",
+        "devkit",
+        "Devtools",
+        "ngrx",
+        "Resizer",
+        "selecto",
+        "Selecto",
+        "upsert"
+    ],
+    "files.associations": {
+        ".huskyrc": "json",
+        ".lintstagedrc": "json",
+        ".importsortrc": "json"
+    },
+    "typescript.format.semicolons": "insert",
+    "editor.formatOnSave": true,
+    "eslint.alwaysShowStatus": true,
+    "eslint.format.enable": true,
+    "eslint.run": "onSave"
+}

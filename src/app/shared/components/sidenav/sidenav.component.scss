@@ -1,0 +1,36 @@
+// src\app\shared\components\sidenav\sidenav.component.scss
+
+.sideNav-container {
+  height: calc(92vh);
+  top: calc(8vh);
+  position: absolute;
+  left: 0;
+  right: 0;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+
+  .mat-sidenav {
+    // filter: drop-shadow(10px 0px 20px #4444dd);
+    // box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    padding: 8px;
+    width: 100px;
+    min-width: 100px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .mat-nav-list a:link{
+        margin-bottom: 30px;;
+    }
+  }
+
+  .mat-drawer-backdrop.mat-drawer-shown {
+    background-color: transparent !important;
+   visibility: visible;
+  }
+
+  
+  .mat-sidenav-content {
+    height: calc(100vh - 64px);
+  }
+}

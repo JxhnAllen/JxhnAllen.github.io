@@ -1,0 +1,56 @@
+// Custom Theming for Angular Material
+@use '@angular/material' as mat;
+// Plus imports for other components in your app.
+
+// Include the common styles for Angular Material. We include this here so that you only
+// have to load a single css file for Angular Material in your app.
+// Be sure that you only ever include this mixin once!
+@include mat.core();
+
+// import custom theme
+@import "./style-theme.scss";
+// import custom component themes
+@import "./style-custom-components.scss"; 
+
+// Include theme styles for core and each component used in your app.
+// Alternatively, you can import and @include the theme mixins for each component
+// that you are using.
+
+
+@include mat.all-component-themes($portfolio-theme);
+@include mat.core($custom-typography);
+.dark-theme {
+    @include mat.all-component-themes($dark-theme);
+}
+  
+
+/* Rules for sizing the icon. */
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
+
+/* Rules for using icons as black on a light background. */
+.material-icons.md-dark { color: rgba(0, 0, 0, 0.54); }
+.material-icons.md-dark.md-inactive { color: rgba(0, 0, 0, 0.26); }
+
+/* Rules for using icons as white on a dark background. */
+.material-icons.md-light { color: rgba(255, 255, 255, 1); }
+.material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
+
+html, body { height: 100%; }
+body { margin: 0;  }
+
+.menu-button {
+    text-transform: capitalize;
+  }
+  
+.spacer {
+flex: 1 1 auto;
+}
+
+.mat-icon-no-color {
+color: rbga(0, 0, 0, 0.54);
+}
+
+

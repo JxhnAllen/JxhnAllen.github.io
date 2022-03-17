@@ -1,0 +1,190 @@
+// src/style-theme.scss
+@import '~@angular/material/theming';
+
+// Define primary theme
+$portfolio-primary: mat.define-palette(mat.$teal-palette, 600);
+$portfolio-accent: mat.define-palette(mat.$blue-gray-palette, A200, A100, A400);
+$portfolio-warn: mat.define-palette(mat.$red-palette);
+
+// Define a dark theme
+$dark-primary: mat.define-palette(mat.$teal-palette);
+$dark-accent: mat.define-palette(mat.$blue-gray-palette);
+
+// Define typography
+$custom-typography: mat.define-typography-config(
+  $display-4:     mat.define-typography-level(
+    $font-family: 'Roboto',
+    $font-weight: 600,
+    $font-size: 112px,
+    $line-height: 112px,
+    $letter-spacing: normal,
+),
+  $display-3:     mat.define-typography-level(
+    $font-family: 'Roboto',
+    $font-weight: 600,
+    $font-size: 56px,
+    $line-height: 56px,
+    $letter-spacing: normal,
+),
+  $display-2:     mat.define-typography-level(
+    $font-family: 'Roboto',
+    $font-weight: 600,
+    $font-size: 45px,
+    $line-height: 45px,
+    $letter-spacing: normal,
+),
+  $display-1:     mat.define-typography-level(
+    $font-family: 'Roboto',
+    $font-weight: 600,
+    $font-size: 34px,
+    $line-height: 34px,
+    $letter-spacing: normal,
+),
+  $headline:      mat.define-typography-level(
+    $font-family: 'Roboto',
+    $font-weight: 600,
+    $font-size: 24px,
+    $line-height: 24px,
+    $letter-spacing: normal,
+),
+  $title:         mat.define-typography-level(
+    $font-family: 'Roboto',
+    $font-weight: 600,
+    $font-size: 20px,
+    $line-height: 20px,
+    $letter-spacing: normal,
+),
+  $subheading-2:  mat.define-typography-level(
+    $font-family: 'Lora',
+    $font-weight: 400,
+    $font-size: 16px,
+    $line-height: 16px,
+    $letter-spacing: normal,
+),
+  $subheading-1:  mat.define-typography-level(
+    $font-family: 'Lora',
+    $font-weight: 400,
+    $font-size: 15px,
+    $line-height: 15px,
+    $letter-spacing: normal,
+  ),
+  $body-2:        mat.define-typography-level(
+    $font-family: 'Lora',
+    $font-weight: 600,
+    $font-size: 14px,
+    $line-height: 14px,
+    $letter-spacing: normal,
+  ),
+  $body-1:        mat.define-typography-level(
+    $font-family: 'Lora',
+    $font-weight: 400,
+    $font-size: 14px,
+    $line-height: 14px,
+    $letter-spacing: normal,
+  ),
+  $button:         mat.define-typography-level(
+    $font-family: 'Space Mono',
+    $font-weight: 400,
+    $font-size: 14px,
+    $line-height: 14px,
+    $letter-spacing: normal,
+  ),
+  $input:            mat.define-typography-level(
+    $font-family: 'Space Mono',
+    $font-weight: 400,
+    $font-size: 1rem,
+    $line-height: 1,
+    $letter-spacing: normal,
+  ),
+  $caption:   mat.define-typography-level(
+    $font-family: 'Space Mono',
+    $font-weight: 400,
+    $font-size: 12px,
+    $line-height: 12px,
+    $letter-spacing: normal,
+  ),
+);
+
+$portfolio-theme: mat.define-light-theme((
+  color: (
+    primary: $portfolio-primary,
+    accent: $portfolio-accent,
+    warn: $portfolio-warn,
+  )
+));
+
+$dark-theme: mat.define-dark-theme((
+  color: (
+    primary: $dark-primary,
+    accent: $dark-accent,
+    warn: $portfolio-warn,
+  )
+));
+
+
+// Define custom color palettes
+$teal-palette: (
+    50: #EEEEEE,
+    100: #B2DFDB,
+    200: #B2DFDB,
+    300: #80CBC4,
+    400: #4DB6AC,
+    500: #26A69A,
+    600: #009688,
+    700: #00897B,
+    800: #00796B,
+    900: #00695C,
+    A100: #A7FFEB,
+    A200: #64FFDA,
+    A400: #1DE9B6,
+    A700: #00BFA5,
+    contrast: (
+        50: $black-87-opacity,
+        100: $black-87-opacity,
+        200: $black-87-opacity,
+        300: $black-87-opacity,
+        400: $black-87-opacity,
+        500: #EEEEEE,
+        600: #EEEEEE,
+        700: #EEEEEE,
+        800: #EEEEEE,
+        900: #EEEEEE,
+        A100: $black-87-opacity,
+        A200: $black-87-opacity,
+        A400: $black-87-opacity,
+        A700: #EEEEEE,
+    )
+);
+
+$grey-palette: (
+    50: #393E46,
+    100: #393E46,
+    200: #393E46,
+    300: #393E46,
+    400: #393E46,
+    500: #393E46,
+    600: #393E46,
+    700: #393E46,
+    800: #393E46,
+    900: #393E46,
+    A100: #ffffff,
+    A200: #fff7f4,
+    A400: #fc8259,
+    A700: #f44205,
+    contrast: (
+        50: #EEEEEE,
+        100: #EEEEEE,
+        200: #EEEEEE,
+        300: #EEEEEE,
+        400: #EEEEEE,
+        500: #EEEEEE,
+        600: #EEEEEE,
+        700: #EEEEEE,
+        800: #EEEEEE,
+        900: #EEEEEE,
+        A100: #EEEEEE,
+        A200: #EEEEEE,
+        A400: #EEEEEE,
+        A700: #EEEEEE,
+    )
+);
