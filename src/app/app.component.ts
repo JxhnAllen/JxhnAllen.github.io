@@ -1,4 +1,5 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { Store } from '@ngrx/store';
 import { Observable, Subject, takeUntil } from 'rxjs';
 import * as actions from 'src/app/store/actions/actions.actions';
@@ -19,6 +20,7 @@ export class AppComponent implements OnInit, OnDestroy {
 
     constructor(
         private store: Store<fromReducer.siteState>,
+        private router: Router,
     ) {
         this.themeDarkMode$ = this.store.select(selectThemeToggle);
         this.themeDarkMode$

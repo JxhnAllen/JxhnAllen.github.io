@@ -54,3 +54,14 @@ color: rbga(0, 0, 0, 0.54);
 }
 
 
+section.app-section {
+    height: calc(100vh);
+    width: calc(100vw);
+}
+
+section.type1 {
+    background-color: aqua;
+}
+section.type2 {
+    background-color: black;
+}
