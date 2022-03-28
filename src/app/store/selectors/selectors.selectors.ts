@@ -19,3 +19,10 @@ export const selectThemeToggle = createSelector(
         return (state ? state?.dark?.darkMode : null);
     }
 );
+
+export const selectCurrentSection = createSelector(
+    getCurrentState,
+    (state: State.siteState) => {
+        return (state ? state?.activeSection : null);
+    }
+);

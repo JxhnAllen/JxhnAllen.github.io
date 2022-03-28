@@ -1,12 +1,24 @@
 <section>
     <mat-toolbar [color]="themeColor">
         
-        <span>Logo</span>
+        <button mat-icon-button  
+        [ngClass]="{'active': section === 'home'}"
+        pageScroll
+        (click)="navToSection('home')"
+        matTooltip="Home">
+            <mat-icon>&#xe87c;</mat-icon>
+        </button>
+
+        <button mat-icon-button
+        (click)="toggleTheme()"
+        matTooltip="Toggle dark theme">
+            <mat-icon>brightness_6</mat-icon>
+        </button>
+
+
         <span class="spacer"></span>
         <!-- ? below button will help us change the theme at run-time. -->
-        <button mat-icon-button (click)="toggleTheme()" matTooltip="Toggle dark theme">
-          <mat-icon>brightness_6</mat-icon>
-        </button>
+        
          
         <div class="nav-link-container">
             <button mat-stroked-button
