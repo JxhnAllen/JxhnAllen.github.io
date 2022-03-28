@@ -45,9 +45,8 @@ export class HeaderComponent implements OnInit {
     }
 
 
-    public goToAbout() {
-        console.log("jhere");
-        this.router.navigate([], { fragment: "about" });
+
+    public goToAbout(element: HTMLElement) {
     }
 
     ngOnDestroy(): void {
