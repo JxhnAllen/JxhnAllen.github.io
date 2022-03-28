@@ -7,11 +7,13 @@ export const reducersFeatureKey = 'state';
 
 export interface siteState {
     loading: boolean;
+    activeSection: string,
     dark: Dark;
 }
 
 export const initialState: siteState = {
     loading: false,
+    activeSection: "home",
     dark: {
         darkMode: false
     }
@@ -34,6 +36,15 @@ export const appReducer = createReducer(
             };
         }
     ),
+    on(
+        ActionTypes.toggleActiveSection,
+        (state: siteState, action: { activeSection: string; }) => {
+            return {
+                ...state,
+                activeSection: action.activeSection
+            };
+        }
+    )
 );
 
 export function reducer(state: siteState, action: Action) {

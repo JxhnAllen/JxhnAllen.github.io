@@ -6,6 +6,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { EffectsModule } from '@ngrx/effects';
 import { StoreModule } from '@ngrx/store';
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
+import { NgxPageScrollCoreModule } from 'ngx-page-scroll-core';
 import * as fromReducer from '../../src/app/store/reducers/reducers.reducer';
 import { environment } from '../environments/environment';
 import { AppRoutingModule } from './app-routing.module';
@@ -43,6 +44,9 @@ const routes: Routes = [];
             fromReducer.reducersFeatureKey,
             fromReducer.reducer
         ),
+        NgxPageScrollCoreModule.forRoot({
+            duration: 1500
+        })
     ],
     providers: [],
     bootstrap: [AppComponent],

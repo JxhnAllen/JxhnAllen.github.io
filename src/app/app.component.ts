@@ -1,6 +1,8 @@
-import { Component, OnDestroy, OnInit } from '@angular/core';
+import { DOCUMENT } from '@angular/common';
+import { Component, Inject, OnDestroy, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { Store } from '@ngrx/store';
+import { PageScrollService } from 'ngx-page-scroll-core';
 import { Observable, Subject, takeUntil } from 'rxjs';
 import * as actions from 'src/app/store/actions/actions.actions';
 import * as fromReducer from './store/reducers/reducers.reducer';
@@ -17,10 +19,13 @@ export class AppComponent implements OnInit, OnDestroy {
     private ngUnsubscribe$ = new Subject<void>();
     public themeDarkMode$: Observable<any>;
     public themeDarkMode: any;
+    public activeSection = 1;
 
     constructor(
         private store: Store<fromReducer.siteState>,
         private router: Router,
+        private pageScrollService: PageScrollService,
+        @Inject(DOCUMENT) private document: any
     ) {
         this.themeDarkMode$ = this.store.select(selectThemeToggle);
         this.themeDarkMode$
@@ -28,6 +33,15 @@ export class AppComponent implements OnInit, OnDestroy {
             .subscribe((value) => {
                 this.themeDarkMode = value;
             });
+    }
+
+    fullPageScroll(event: HTMLElement, i: any) {
+        this.pageScrollService.scroll({
+            scrollTarget: event,
+            document: this.document
+        });
+
+        this.activeSection = i;
     }
 
     ngOnInit(): void {

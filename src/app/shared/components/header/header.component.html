@@ -1,17 +1,43 @@
 <section>
     <mat-toolbar [color]="themeColor">
         
-        <span>Portfolio</span>
+        <span>Logo</span>
         <span class="spacer"></span>
         <!-- ? below button will help us change the theme at run-time. -->
         <button mat-icon-button (click)="toggleTheme()" matTooltip="Toggle dark theme">
           <mat-icon>brightness_6</mat-icon>
         </button>
-          
-        <a [routerLink]="['/home']" fragment="Test">Home </a>
-        <a [routerLink]="['/about']" fragment="Test">About</a>
-        <!-- ? below menu will help us change the color at run-time. -->
          
+        <div class="nav-link-container">
+            <button mat-stroked-button
+                [ngClass]="{'active': section === 'about'}"
+                pageScroll
+                (click)="navToSection('about')">
+                About.me
+            </button>
+
+            <button mat-stroked-button
+                [ngClass]="{'active': section === 'skills'}"
+                pageScroll
+                (click)="navToSection('skills')">
+                Skill.services
+            </button>
+
+            <button mat-stroked-button
+                [ngClass]="{'active': section === 'portfolio'}"
+                pageScroll
+                (click)="navToSection('portfolio')">
+                Portfolio.build
+            </button>
+
+            <button mat-stroked-button
+                [ngClass]="{'active': section === 'contact'}"
+                pageScroll
+                (click)="navToSection('contact')">
+                Contact.next
+            </button>
+         
+        </div>
           
      
         
