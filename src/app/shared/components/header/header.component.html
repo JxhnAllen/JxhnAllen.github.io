@@ -8,7 +8,8 @@
           <mat-icon>brightness_6</mat-icon>
         </button>
           
-        <a [routerLink]="['/home']" fragment="Test">Jump to 'Test' anchor </a>
+        <a [routerLink]="['/home']" fragment="Test">Home </a>
+        <a [routerLink]="['']"  fragment="about" (click)="goToAbout()">About</a>
         <!-- ? below menu will help us change the color at run-time. -->
          
           

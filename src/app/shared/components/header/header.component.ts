@@ -1,5 +1,6 @@
 import { OverlayContainer } from '@angular/cdk/overlay';
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { Store } from '@ngrx/store';
 import { Observable, Subject, takeUntil } from 'rxjs';
 import * as actions from 'src/app/store/actions/actions.actions';
@@ -22,7 +23,8 @@ export class HeaderComponent implements OnInit {
 
     constructor(
         private overlayContainer: OverlayContainer,
-        private store: Store<siteState>
+        private store: Store<siteState>,
+        private router: Router,
     ) {
         this.themeDarkMode$ = this.store.select(selectThemeToggle);
         this.themeDarkMode$
@@ -40,6 +42,12 @@ export class HeaderComponent implements OnInit {
         this.store.dispatch(
             actions.toggleTheme({ isDark: !this.themeDarkMode })
         );
+    }
+
+
+    public goToAbout() {
+        console.log("jhere");
+        this.router.navigate([], { fragment: "about" });
     }
 
     ngOnDestroy(): void {
