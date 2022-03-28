@@ -1,0 +1,23 @@
+/* Global Styles */
+
+:host {
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    .Clr-Site {
+        display: flex;
+        flex-flow: column;
+        min-height: 100vh;
+    }
+
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+    section:first-child {
+        margin-top: 50px;
+    }
+}

@@ -1,42 +1,57 @@
 <section>
     <mat-toolbar [color]="themeColor">
         
-        <span>Portfolio</span>
+        <button mat-icon-button  
+        [ngClass]="{'active': section === 'home'}"
+        pageScroll
+        (click)="navToSection('home')"
+        matTooltip="Home">
+            <mat-icon>&#xe87c;</mat-icon>
+        </button>
+
+        <button mat-icon-button
+        (click)="toggleTheme()"
+        matTooltip="Toggle dark theme">
+            <mat-icon>brightness_6</mat-icon>
+        </button>
+
+
         <span class="spacer"></span>
         <!-- ? below button will help us change the theme at run-time. -->
-        <button mat-icon-button (click)="toggleTheme()" matTooltip="Toggle dark theme">
-          <mat-icon>brightness_6</mat-icon>
-        </button>
+        
+         
+        <div class="nav-link-container">
+            <button mat-stroked-button
+                [ngClass]="{'active': section === 'about'}"
+                pageScroll
+                (click)="navToSection('about')">
+                About.me
+            </button>
+
+            <button mat-stroked-button
+                [ngClass]="{'active': section === 'skills'}"
+                pageScroll
+                (click)="navToSection('skills')">
+                Skill.services
+            </button>
+
+            <button mat-stroked-button
+                [ngClass]="{'active': section === 'portfolio'}"
+                pageScroll
+                (click)="navToSection('portfolio')">
+                Portfolio.build
+            </button>
+
+            <button mat-stroked-button
+                [ngClass]="{'active': section === 'contact'}"
+                pageScroll
+                (click)="navToSection('contact')">
+                Contact.next
+            </button>
+         
+        </div>
           
-        <!-- ? below menu will help us change the color at run-time. -->
-        <button mat-button [matMenuTriggerFor]="menu" class="menu-button" matTooltip="Select a theme color">
-          {{ themeColor }}
-        </button>
-          
-        <ng-template #noRadio>
-          radio_button_unchecked
-        </ng-template>
-          
-        <mat-menu #menu="matMenu">
-          <button mat-menu-item (click)="themeColor = 'primary'">
-            <mat-icon [color]="themeColor === 'primary' ? 'primary' : 'no-color'">
-              <ng-container *ngIf="themeColor === 'primary'; else noRadio">radio_button_checked</ng-container>
-            </mat-icon>
-            Primary
-          </button>
-          <button mat-menu-item (click)="themeColor = 'warn'">
-            <mat-icon [color]="themeColor === 'warn' ? 'warn' : 'no-color'">
-              <ng-container *ngIf="themeColor === 'warn'; else noRadio">radio_button_checked</ng-container>
-            </mat-icon>
-            Warn
-          </button>
-          <button mat-menu-item (click)="themeColor = 'accent'">
-            <mat-icon [color]="themeColor === 'accent' ? 'accent' : 'no-color'">
-              <ng-container *ngIf="themeColor === 'accent'; else noRadio">radio_button_checked</ng-container>
-            </mat-icon>
-            Accent
-          </button>
-        </mat-menu>
-          
+     
+        
       </mat-toolbar>
 </section>

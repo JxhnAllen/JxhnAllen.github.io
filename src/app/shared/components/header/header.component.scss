@@ -1,7 +1,39 @@
 section {
-    height: calc(8vh);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    overflow: hidden;
+
 
     mat-toolbar{
-        height: calc(8vh);
+        height: 50px;
     }
+  }
+
+
+  .nav-link-container {
+    top: 0;
+    opacity: 0.7;
+    // background-color: rgba(0,0,0,.2);
+    transition: opacity 0.3s;
+    -webkit-transition: opacity 0.3s;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end; 
+    align-items: center;
+
+    button {
+        // flex: 1 0 0;
+        margin: auto 10px;
+    }
+
+    button.active{
+        background-color: black;
+    }
+    
+  }
+
+
+.scroll-outer {
+    height: 100%;
   }

@@ -1,12 +1,34 @@
 
 <!-- TODO top loader goes here -->
 <!-- <pending-indicator></pending-indicator> -->
+
 <header>
     <section [class.dark-theme]="(this.themeDarkMode$ | async)">
         <app-header></app-header>
-        <app-sidenav></app-sidenav>
     </section>
 </header>
+<body>
+    <!-- <router-outlet> -->
+    <!-- </router-outlet> -->
+    <section #home id="home" class="app-section type1">
+        <app-page-home></app-page-home>
+    </section>
+    <section #about id="about" class="app-section type2">
+        <app-page-about></app-page-about>
+    </section>
+    <section #skills id="skills" class="app-section type1">
+    </section>
+    <section #portfolio id="portfolio" class="app-section type2">
+        <!-- <app-page-home></app-page-home> -->
+    </section>
+    <section #contact id="contact" class="app-section type1">
+        <!-- <app-page-home></app-page-home> -->
+    </section>
+
+</body>
+<!-- <footer>
+
+</footer> -->
 <!-- <main>
-    <router-outlet></router-outlet>
+    
 </main> -->
