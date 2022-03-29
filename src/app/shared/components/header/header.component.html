@@ -2,16 +2,16 @@
     <mat-toolbar [color]="themeColor">
         
         <button mat-icon-button  
-        [ngClass]="{'active': section === 'home'}"
-        pageScroll
-        (click)="navToSection('home')"
-        matTooltip="Home">
+            [ngClass]="{'active': section === 'home'}"
+            pageScroll
+            (click)="navToSection('home')"
+            matTooltip="Home">
             <mat-icon>&#xe87c;</mat-icon>
         </button>
 
         <button mat-icon-button
-        (click)="toggleTheme()"
-        matTooltip="Toggle dark theme">
+            (click)="toggleTheme()"
+            matTooltip="Toggle dark theme">
             <mat-icon>brightness_6</mat-icon>
         </button>
 
@@ -19,34 +19,37 @@
         <span class="spacer"></span>
         <!-- ? below button will help us change the theme at run-time. -->
         
-         
         <div class="nav-link-container">
-            <button mat-stroked-button
+            <button mat-button
+            color="accent"
                 [ngClass]="{'active': section === 'about'}"
                 pageScroll
                 (click)="navToSection('about')">
-                About.me
+                01 About
             </button>
 
-            <button mat-stroked-button
+            <button mat-button
+            color="accent"
                 [ngClass]="{'active': section === 'skills'}"
                 pageScroll
                 (click)="navToSection('skills')">
-                Skill.services
+                02 Skills
             </button>
 
-            <button mat-stroked-button
+            <button mat-button
+            color="accent"
                 [ngClass]="{'active': section === 'portfolio'}"
                 pageScroll
                 (click)="navToSection('portfolio')">
-                Portfolio.build
+                03 Portfolio
             </button>
 
-            <button mat-stroked-button
+            <button mat-button
+            color="accent"
                 [ngClass]="{'active': section === 'contact'}"
                 pageScroll
                 (click)="navToSection('contact')">
-                Contact.next
+                04 Contact
             </button>
          
         </div>
