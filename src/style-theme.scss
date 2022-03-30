@@ -1,6 +1,26 @@
 // src/style-theme.scss
 @import '~@angular/material/theming';
 
+// DARK BLUE
+$primaryBlackDark: #0a1527;
+$primaryBlack: #0d192d;
+$primaryBlackLight: #14233e;
+
+// NEON GREEN
+$primaryGreenDark: #294753;
+$primaryGreen: #90fcdc;
+$primaryGreenLight: #68b1a6;
+
+// TEXT
+$primaryWhite: #ced7f3;
+$primaryGrey: #8a93ad;
+
+$darkBlue:#0c1829;
+$midBlue:#7c87a5;
+$lightBlue:#c4d0f3;
+$neonGreen:#43ffd5;
+$neonGreenOpaque: rgb(67, 255, 213, .85);
+
 // Define custom color palettes
 $neon-teal-palette: (
     50: #e0f2f1,
@@ -72,11 +92,14 @@ $flat-blue-grey-palette: (
 // Define primary theme
 $portfolio-primary: mat.define-palette($flat-blue-grey-palette, 900, 900, 700);
 $portfolio-accent: mat.define-palette($neon-teal-palette, 200, 200, 50);
-$portfolio-warn: mat.define-palette(mat.$red-palette);
+$portfolio-warn: mat-palette($mat-blue);
 
 // Define a dark theme
 $dark-primary: mat.define-palette(mat.$teal-palette);
 $dark-accent: mat.define-palette(mat.$blue-gray-palette);
+
+//background color
+$background-color: map_get($flat-blue-grey-palette, 900);
 
 // Define typography
 $custom-typography: mat.define-typography-config(
@@ -178,6 +201,7 @@ $portfolio-theme: mat.define-light-theme((
     primary: $portfolio-primary,
     accent: $portfolio-accent,
     warn: $portfolio-warn,
+    background: $background-color
   )
 ));
 
@@ -188,6 +212,10 @@ $dark-theme: mat.define-dark-theme((
     warn: $portfolio-warn,
   )
 ));
+
+$background: map-get($portfolio-theme, background);
+$background: map_merge($background, (background: $background-color));
+$portfolio-theme: map_merge($portfolio-theme, (background: $background));
 
 
 
