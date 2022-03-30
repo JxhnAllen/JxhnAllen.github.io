@@ -38,7 +38,10 @@
 .material-icons.md-light { color: rgba(255, 255, 255, 1); }
 .material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
 
-html, body { height: 100%; }
+html, body { 
+    height: 100%;
+    background-color: $primaryBlack;
+}
 body { margin: 0;  }
 
 .menu-button {
@@ -53,15 +56,31 @@ flex: 1 1 auto;
 color: rbga(0, 0, 0, 0.54);
 }
 
+.site-wrapper{
+    display: flex;
+    justify-content: center;
+    -webkit-box-align: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 calc(10vw);
+    margin-top: 50px;
+}
 
-section.app-section {
+.app-section {
     height: calc(100vh);
-    width: calc(100vw);
+    width: calc(80vw);
+    margin: 0 auto;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 section.type1 {
-    background-color: aqua;
+    background-color: $primaryBlackLight;
 }
 section.type2 {
-    background-color: black;
+    background-color: $primaryBlackDark;
 }
