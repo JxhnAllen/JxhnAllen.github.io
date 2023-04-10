@@ -6,4 +6,4 @@ I have designed responsive websites, created user interfaces for applications, a
 
 If you would like to learn more about my experience and qualifications as a software developer, please refer to my [resume](files/Allen-John-V-resume-2023.pdf.zip). Feel free to contact me at johnallen.dev@gmail.com if you would like to get in touch with me to discuss potential collaborations or job opportunities. You can also connect with me on [LinkedIn](https://www.linkedin.com/in/johnvalleniii/).
 
-<a href="files/Allen-John-V-resume-2023.pdf" download>resume 2</a>
+<a href="files/Allen-John-V-resume-2023.pdf.zip" download>resume 3</a>
