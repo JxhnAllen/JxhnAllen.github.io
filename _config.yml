@@ -4,3 +4,4 @@ plugins:
 logo: /assets/img/john_avatar6_small.png
 title: Developer, Designer, Jack-of-All-Trades
 description: Code can be Creative
+show_downloads: true
