@@ -5,12 +5,12 @@
 
 
 a {
-    color: #69c3a2;
+    color: !important #69c3a2;
     text-decoration: none
 }
 
 a:hover,a:focus {
-    color: #69c3a2;
+    color:!important #69c3a2;
     font-weight: bold
 }
 
