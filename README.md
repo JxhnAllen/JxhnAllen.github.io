@@ -7,4 +7,4 @@ I have designed responsive websites, created user interfaces for applications, a
 If you would like to learn more about my experience and qualifications as a software developer, please refer to my [resume](https://raw.githubusercontent.com/JxhnAllen/JxhnAllen.github.io/blob/88e9bf3ec8d3927ce2910309b15ba0890c1f2b41/Allen-John-V-resume-2023.pdf). Feel free to contact me at johnallen.dev@gmail.com if you would like to get in touch with me to discuss potential collaborations or job opportunities. You can also connect with me on [LinkedIn](https://www.linkedin.com/in/johnvalleniii/).
 
 [download this](files/Allen-John-V-resume-2023.pdf.zip)
-<a href="https://raw.githubusercontent.com/JxhnAllen/JxhnAllen.github.io/blob/88e9bf3ec8d3927ce2910309b15ba0890c1f2b41/Allen-John-V-resume-2023.pdf" download>resume 5</a>
+<a href="https://raw.githubusercontent.com/JxhnAllen/JxhnAllen.github.io/88e9bf3ec8d3927ce2910309b15ba0890c1f2b41/Allen-John-V-resume-2023.pdf" download>resume 6</a>
