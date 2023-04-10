@@ -4,22 +4,23 @@
 @import "{{ site.theme }}";
 
 
-/* unvisited link */
-a:link {
+a {
     color: #69c3a2;
-  }
-  
-  /* visited link */
-  a:visited {
+    text-decoration: none
+}
+
+a:hover,a:focus {
     color: #69c3a2;
-  }
-  
-  /* mouse over link */
-  a:hover {
+    font-weight: bold
+}
+
+a small {
+    font-size: 11px;
     color: #69c3a2;
-  }
-  
-  /* selected link */
-  a:active {
+    margin-top: -0.3em;
+    display: block
+}
+
+a:hover small {
     color: #69c3a2;
-  }
+}
