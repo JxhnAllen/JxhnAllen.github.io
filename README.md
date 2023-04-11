@@ -4,6 +4,6 @@ As a software developer, I have a passion for design and design systems. I belie
 
 I have designed responsive websites, created user interfaces for applications, and collaborated with other developers, designers, and stakeholders to produce high-quality software that meets the needs of my clients. I pay close attention to detail and commit to user-centered design principles in every project I undertake.
 
-If you would like to learn more about my experience and qualifications as a software developer, please refer to my **<a href="https://raw.githubusercontent.com/JxhnAllen/JxhnAllen.github.io/88e9bf3ec8d3927ce2910309b15ba0890c1f2b41/Allen-John-V-resume-2023.pdf" download>resume</a>**. Feel free to contact me at **johnallen.dev@gmail.com** if you would like to get in touch to discuss potential collaborations or job opportunities. You can also find me on **<a href="https://www.linkedin.com/in/johnvalleniii/" target="_blank">LinkedIn</a>**.
+If you would like to learn more about my experience and qualifications as a software developer, please refer to my **<a href="https://raw.githubusercontent.com/JxhnAllen/JxhnAllen.github.io/8bd5ef02771f4e64891d9b5c09a3bb1f09e37467/assets/files/Allen-John-V-resume-2023.pdf" download>resume</a>**. Feel free to contact me at **johnallen.dev@gmail.com** if you would like to get in touch to discuss potential collaborations or job opportunities. You can also find me on **<a href="https://www.linkedin.com/in/johnvalleniii/" target="_blank">LinkedIn</a>**.
 
 
