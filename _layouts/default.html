@@ -19,7 +19,7 @@
         <h1 class="centered green">{{ site.title | default: site.github.repository_name }}</h1>
 
         {% if site.logo %}
-          <img src="{{site.logo | relative_url}}" alt="Logo" />
+          <img src="{{site.logo | relative_url}}" alt="avatar" />
         {% endif %}
 
         <p class="centered italic">{{ site.description | default: site.github.project_tagline }}</p>
@@ -43,7 +43,8 @@
 
       </section>
       <footer>
-        <p><small>©2023 John V Allen &mdash; Built using <a href="https://pages.github.com/">Github Pages</a> & <a href="https://jekyllrb.com/">Jekyll</a> </small></p>
+        <p><small>
+            <img src="/assets/img/logo.png" alt="logo" />©2023 John V Allen &mdash; Built using <a href="https://pages.github.com/">Github Pages</a> & <a href="https://jekyllrb.com/">Jekyll</a> </small></p>
       </footer>
     </div>
     <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
